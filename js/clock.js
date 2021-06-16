@@ -2,12 +2,13 @@
 let clockFaces= [["🕛","🕧"],["🕐","🕜"],["🕑","🕝"],["🕒","🕞"],["🕓","🕟"],["🕔","🕠"],["🕕","🕡"],["🕖","🕢"],["🕗","🕣"],["🕘","🕤"],["🕙","🕥"],["🕚","🕦"]];
 
 window.onload = function() {
-    let d = new Date()
+    
     updateClock(d);
-    setInterval(updateClock(d), 30*1000);
+    setInterval(updateClock(d), 10*1000);
   };
 
 let updateClock = function(d){
+    let d = new Date()
     let hours = d.getHours();
     let minutes = d.getMinutes();
     let emojiHours = hours >= 12 ? hours-12 : hours;
