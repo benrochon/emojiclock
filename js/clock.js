@@ -2,12 +2,11 @@
 let clockFaces= [["🕛","🕧"],["🕐","🕜"],["🕑","🕝"],["🕒","🕞"],["🕓","🕟"],["🕔","🕠"],["🕕","🕡"],["🕖","🕢"],["🕗","🕣"],["🕘","🕤"],["🕙","🕥"],["🕚","🕦"]];
 
 window.onload = function() {
-    
-    updateClock(d);
-    setInterval(updateClock(d), 10*1000);
+    updateClock();
+    setInterval(updateClock(), 10*1000);
   };
 
-let updateClock = function(d){
+let updateClock = function(){
     let d = new Date()
     let hours = d.getHours();
     let minutes = d.getMinutes();
