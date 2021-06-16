@@ -1,9 +1,8 @@
-
 let clockFaces= [["🕛","🕧"],["🕐","🕜"],["🕑","🕝"],["🕒","🕞"],["🕓","🕟"],["🕔","🕠"],["🕕","🕡"],["🕖","🕢"],["🕗","🕣"],["🕘","🕤"],["🕙","🕥"],["🕚","🕦"]];
 
 window.onload = function() {
     updateClock();
-    setInterval(updateClock(), 5000);
+    let = setInterval(function(){updateClock()}, 5000);
   };
 
 let updateClock = function(){
