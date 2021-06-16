@@ -16,7 +16,7 @@ let updateClock = function(d){
    
     document.getElementById("clockface").innerHTML = clockFaces[emojiHours][emojiMinutes];
     changeFavicon(clockFaces[emojiHours][emojiMinutes]);
-    //console.log(`${hours}:${minutes}`);
+    console.log(`clock updated: ${hours}:${minutes}`);
     //console.log(`${emojiHours}:${emojiMinutes}`);
 } 
 
