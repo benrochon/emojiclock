@@ -3,7 +3,7 @@ let clockFaces= [["🕛","🕧"],["🕐","🕜"],["🕑","🕝"],["🕒","🕞"]
 
 window.onload = function() {
     updateClock();
-    setInterval(updateClock(), 10*1000);
+    setInterval(updateClock(), 5000);
   };
 
 let updateClock = function(){
